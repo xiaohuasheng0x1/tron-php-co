@@ -1,0 +1,48 @@
+{
+    "name": "xiaohuasheng0x1/tron-php-co",
+    "version": "1.0.0",
+    "description": "Support TRON's TRX and TRC20, which include functions such as address creation, balance query, transaction transfer, query the latest blockchain, query information based on the blockchain, and query information based on the transaction hash",
+    "keywords": [
+        "php",
+        "tron",
+        "trx",
+        "trc20"
+    ],
+    "type": "library",
+    "homepage": "https://github.com/xiaohuasheng0x1/tron-php-co",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xiaohuasheng0x1",
+            "email": "8888028@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "ext-swoole": "*",
+        "swoole/ide-helper": "^5.0",
+        "xiaohuasheng0x1/web3-php-co": "^1.0",
+        "xiaohuasheng0x1/tron-api-co": "~1.0",
+        "ionux/phactor": "1.0.8",
+        "kornrunner/keccak": "~1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.5 || ~9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tron\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
